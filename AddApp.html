@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS ex</title>
+    </head>
+    <body>
+        <h1>Add App</h1>
+        <input type="number" id="num1" placeholder="Enter a number"/>
+        <input type="number" id="num2" placeholder="Enter a number"/>
+        <button onclick="f1()">ADD</button>
+        <p id='para'></p>
+    </body>
+    <script>
+        function f1(){
+            var a=document.getElementById("num1");
+            var b=document.getElementById("num2");
+            var n1=parseInt(a.value);
+            var n2=parseInt(b.value);
+            // var n1=parseFloat(a.value);
+            // var n2=parseFloat(b.value);
+            var n=n1+n2;
+            var c=document.getElementById("para");
+            c.innerHTML=n;
+        }
+    </script>
+</html>
